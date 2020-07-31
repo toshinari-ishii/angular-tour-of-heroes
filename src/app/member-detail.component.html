@@ -1,8 +1,11 @@
 <div *ngIf="member">
   <h2>{{member.name}}</h2>
-  <div><label>id: </label>{{member.id}}</div>
   <div>
-    <label>name: </label>
+    <label>社員番号</label>
+    <input type="text" [(ngModel)]="member.number" placeholder="社員番号">
+  </div>
+  <div>
+    <label>名前 </label>
     <input type="text" [(ngModel)]="member.name" placeholder="名前">
   </div>
   <button (click)="save()">保存</button>

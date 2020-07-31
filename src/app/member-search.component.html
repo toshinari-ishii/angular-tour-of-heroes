@@ -4,6 +4,7 @@
     (keyup)="search(searchBox.value)">
   <div>
     <div *ngFor="let member of members | async" (click)="gotoDetail(member)" class="search-result">
+      {{ member.number}}
       {{ member.name }}
     </div>
   </div>
