@@ -4,7 +4,7 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import { Member } from './member';
-import { MEMBERS } from './mock-members';
+// import { MEMBERS } from './mock-members';
 
 @Injectable()
 export class MemberService {

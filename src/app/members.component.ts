@@ -47,7 +47,7 @@ export class MembersComponent implements OnInit {
   }
 
   delete(member: Member): void {
-    this.memberService.delete(member.id)
+    this.memberService.delete(member.number)
       .then(() => {
         this.members = this.members.filter(m => m !== member);
         if (this.selectedMember === member) {
